@@ -15,8 +15,10 @@ A Weather microservice which applies rules on different entities parameter locat
 - Validation
 
 #### - Features
- - If the temperature is above 40 degrees, it will make/trigger an instant `critical` alert
-   - If the temperature is above 30 degree and percent humidity is above 10, it will trigger an instant `minor alert to the admin
+ - If the temperature is above 40 degrees, it will make/trigger an instant `critical` alert (`if temperature > 40 then sendCriticalalert`)
+
+ - If the temperature is above 30 degree and percent humidity is above 10, it will trigger an instant `minor alert to the admin (`if temperature > 30 && humidity > 10  then sendMinoralert`)
+
  - All triggered alerts are saved to the database
  - uses drools rule to trigger respective alerts
 
