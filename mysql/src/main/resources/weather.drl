@@ -1,0 +1,8 @@
+import com.ernest.mysql.dto.WeatherRegRequestDto
+
+rule "When the temperature is greater 40 degrees fahrenheit"
+    when
+        weather: WeatherRegRequestDto(temperature > 40)
+    then
+        weather.setCityName("Lagos")
+end
