@@ -11,6 +11,43 @@
 
     <artifactId>influx</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.influxdb</groupId>-->
+<!--            <artifactId>influxdb-client-java</artifactId>-->
+<!--            <version>6.3.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.micrometer</groupId>-->
+<!--            <artifactId>micrometer-registry-influx</artifactId>-->
+<!--            <scope>runtime</scope>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.influxdb</groupId>
+            <artifactId>influxdb-java</artifactId>
+            <version>2.19</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>info.boruisi.platform.data</groupId>-->
+<!--            <artifactId>spring-boot-starter-influxdb</artifactId>-->
+<!--            <version>${influxdb-starter.version}</version>-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/io.github.betacatcode/spring-boot-starter-influxdb -->
+<!--        <dependency>-->
+<!--            <groupId>io.github.betacatcode</groupId>-->
+<!--            <artifactId>spring-boot-starter-influxdb</artifactId>-->
+<!--            <version>0.0.4-RELEASE</version>-->
+<!--        </dependency>-->
+
+
+
+    </dependencies>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
