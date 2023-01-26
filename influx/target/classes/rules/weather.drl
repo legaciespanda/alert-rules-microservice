@@ -1,0 +1,16 @@
+import  com.ernest.influx.dto.WeatherRegRequestDto;
+
+rule "When the temperature is greater 40 degrees fahrenheit, generate a critical alert"
+    when
+        weather: WeatherRegRequestDto(temperature > 40);
+    then
+        weather.setAlertType("critical");
+end
+
+rule "When the temperature is greater 30 and humidity is greater than 10, generate a minor alert"
+    when
+        weather: WeatherRegRequestDto(temperature > 30 && percentHumidity > 10);
+    then
+        weather.setAlertType("minor");
+end
+

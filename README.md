@@ -14,6 +14,11 @@ A Weather microservice which applies rules on different entities parameter locat
 - Lombok
 - Validation
 
+
+### DEMO VIDEO
+- MySQL Microservice Demo - [https://drive.google.com/file/d/1gG6hgfLT1b7dutfPDobmhmaioGR8mmVG/view?usp=share_link](https://drive.google.com/file/d/1gG6hgfLT1b7dutfPDobmhmaioGR8mmVG/view?usp=share_link)
+- InfluxDB Microservice Demo - [https://drive.google.com/file/d/1oN5grmN2aSha2pBU7hp0skGRtcDyQejs/view?usp=sharing](https://drive.google.com/file/d/1oN5grmN2aSha2pBU7hp0skGRtcDyQejs/view?usp=sharing)
+
 #### - Features
  - If the temperature is above 40 degrees, it will make/trigger an instant `critical` alert (`if temperature > 40 then sendCriticalalert`)
 
